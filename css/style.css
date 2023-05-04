@@ -1,0 +1,94 @@
+*{
+    font-family: 'Viva sans', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(82, 223, 82);
+}
+.form_calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+#title{
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: overline rgb(163, 162, 162) 1px;
+    color: whitesmoke;    
+}
+span{
+    font-size: 10px;
+    text-align: center;
+    opacity: 0.5;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 100px;
+    margin-top: 20px; 
+}
+label{
+    position: relative;
+    right: 30px;
+    top: 4px;
+    width: 50px;
+}
+input{
+    position: relative;
+    bottom: 20px;
+    left: 25px;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    height: 30px;
+    width: 250px;
+    text-indent: 5px;
+}
+#kg{
+    position: relative;
+    left: 290px;
+    bottom: 45px;
+    width: 20px;
+    border: 0;
+    padding: 0;
+    transition: all .2s ease-in-out;
+}
+#metros{
+    position: relative;
+    left: 285px;
+    bottom: 48px;
+    width: 25px;
+    border: 0;
+    padding: 0;
+    transition: all .2s ease-in-out;
+}
+#calcular{
+    position: relative;
+    bottom: 20px;
+    left: 100px;
+    border-radius: 4px;
+    background-color: rgb(3, 199, 13);
+    outline: none;
+    border: 0;
+    height: 30px;
+    width: 100px;
+    transition: all .2s ease-in-out;
+}
+input::placeholder{
+    text-align: center;
+}
+#kg:hover,#metros:hover, #calcular:hover{
+   transform: scale(1.2);
+}
