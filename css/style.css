@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(82, 223, 82);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 .form_calc{
     display: flex;
@@ -26,12 +26,13 @@ body{
     text-align: center;
     margin-bottom: 10px;
     text-decoration: overline rgb(163, 162, 162) 1px;
-    color: whitesmoke;    
+    color: rgb(15, 15, 15);    
 }
 span{
     font-size: 10px;
     text-align: center;
     opacity: 0.5;
+    color: rgb(12, 12, 12);
 }
 form{
     display: flex;
@@ -44,6 +45,7 @@ label{
     right: 30px;
     top: 4px;
     width: 50px;
+    color: rgb(17, 17, 17);
 }
 input{
     position: relative;
@@ -54,7 +56,7 @@ input{
     border: 0;
     height: 30px;
     width: 250px;
-    text-indent: 5px;
+    text-align: center;
 }
 #kg{
     position: relative;
@@ -79,7 +81,6 @@ input{
     bottom: 20px;
     left: 100px;
     border-radius: 4px;
-    background-color: rgb(3, 199, 13);
     outline: none;
     border: 0;
     height: 30px;
@@ -90,5 +91,17 @@ input::placeholder{
     text-align: center;
 }
 #kg:hover,#metros:hover, #calcular:hover{
-   transform: scale(1.2);
+   transform: scale(1.1);
+}
+.modal{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 1px 2px 5px;
 }
