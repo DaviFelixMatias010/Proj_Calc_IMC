@@ -1,7 +1,11 @@
-const B_peso = 'Baixo peso'
-const P_ideal = 'Peso Ideal'
-const Sobrepeso = 'Sobrepeso'
-const Obesidade = 'Obesidade'
+class tipoImc{
+    constructor(pBaixo,pIdeal,pSobrepeso,Obesidade){
+        this.pBaixo = pBaixo
+        this.pIdeal = pIdeal
+        this.pSobrepeso = pSobrepeso
+        this.Obesidade = Obesidade
+    }
+}
 function calc(){
     let peso = document.getElementById('peso')
     let altura = document.getElementById('altura')

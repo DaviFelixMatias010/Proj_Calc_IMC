@@ -18,15 +18,22 @@
                 <span>Descubra qual seu indice de Massa corporal</span>
             </div>
             <form action="">
-                <label for="peso">Peso</label>
                 <input type="text" id="peso" placeholder="Ex. 74.5">
                 <img src="../imgs/kg.png" alt="kg" id="kg">
-                <label for="altura">Altura</label>
                 <input type="text" id="altura" placeholder="Ex. 1.65">
                 <img src="../imgs/height.png" alt="metros" id="metros">
                 <button type="button" id="calcular" onclick="calc()" value="Calcular
                 ">Calcular</button>
             </form>
+        </div>
+        <div class="status_imc">
+            <div id="status">
+                 <h1>Status</h1>
+            </div>
+            <div class="img_imc">
+                <img class="masculino" src="../imgs/status_imc/magro_masculino.png" alt="#" width="70px" id="masculino">
+                <img class="feminino" src="../imgs/status_imc/magro_feminino.png" alt="#" width="75px" id="feminino">
+            </div>
         </div>
     </div>
     <script src="../js/script.js"></script>

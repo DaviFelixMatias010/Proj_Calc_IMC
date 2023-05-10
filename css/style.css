@@ -5,103 +5,123 @@
     box-sizing: border-box;
 }
 body{
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background:rgba(71,211,190,255);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .form_calc{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 50px 0 0 10px;
     flex-direction: column;
-    margin-top: 5%;
-    width: 100%;
+    background-color: 
+    rgba(30,77,97,255);
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px black ;
+    padding: 80px 10px;
 }
 .title{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    font-size: 15px;
 }
 #title{
-    text-align: center;
     margin-bottom: 10px;
-    text-decoration: overline rgb(163, 162, 162) 1px;
-    color: rgb(15, 15, 15);    
+    color: rgba(86,223,199,255);    
 }
 span{
-    font-size: 10px;
-    text-align: center;
+    font-size: 8px;
     opacity: 0.5;
-    color: rgb(12, 12, 12);
+    color: white;
 }
 form{
     display: flex;
     flex-direction: column;
-    padding: 8px 100px;
-    margin-top: 20px; 
+    justify-content: center;
+    align-items: center;
+    padding: 8px 90px;
 }
 label{
     position: relative;
     right: 30px;
     top: 4px;
     width: 50px;
-    color: rgb(17, 17, 17);
+    color: white;
 }
 input{
-    position: relative;
-    bottom: 20px;
-    left: 25px;
     border-radius: 4px;
     outline: none;
     border: 0;
-    height: 30px;
-    width: 250px;
     text-align: center;
+    background-color: #0e2d3f;
+    margin: 5px 0 5px 0;
+    color: white;
+    padding: 8px 20px;
 }
 #kg{
     position: relative;
-    left: 290px;
-    bottom: 45px;
-    width: 20px;
+    bottom: 32px;
+    right: 100px;
+    width: 16px;
     border: 0;
     padding: 0;
     transition: all .2s ease-in-out;
 }
 #metros{
     position: relative;
-    left: 285px;
-    bottom: 48px;
+    bottom: 35px;
+    right: 100px;    
     width: 25px;
     border: 0;
     padding: 0;
     transition: all .2s ease-in-out;
 }
 #calcular{
-    position: relative;
-    bottom: 20px;
-    left: 100px;
     border-radius: 4px;
     outline: none;
     border: 0;
-    height: 30px;
-    width: 100px;
+    padding: 10px 50px;
     transition: all .2s ease-in-out;
+    background-color: rgba(86,223,199,255);
+    color: #0e2d3f;
+    font-weight: bolder;
 }
 input::placeholder{
     text-align: center;
+    color: white;
 }
 #kg:hover,#metros:hover, #calcular:hover{
    transform: scale(1.1);
 }
-.modal{
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    z-index: 10;
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 10px 20px;
-    border: none;
-    box-shadow: 1px 2px 5px;
+.status_imc{
+    padding: 50px 60px;
+    border-radius: 5px;
+    background-color:  rgba(30,77,97,255); ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    box-shadow: 1px 2px 5px black;
+}
+#status h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgba(86,223,199,255);
+}
+#masculino{
+    border-right: 1px solid white;
+    margin-right: 1px;
+}
+#masculino, #feminino{
+    filter: drop-shadow(0px 1px 5px black);
+    transition: all .3s ease-in-out;
+}
+#masculino:hover,#feminino:hover{
+    filter: drop-shadow(0px 1px 5px white)
 }
